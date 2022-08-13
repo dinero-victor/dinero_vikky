@@ -6,28 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> my web</title>
     <link rel="stylesheet" href="myweb.css">
+    <link rel="icon" href="victor-sign-up4.jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
+
    <div class="main">
         <div class="box">
-            <h1> welcome to your platform </h1>
+            <h1> SIGN UP </h1>
             <p> please enter your info </p>
 
             <form action="#" method="post" id="form1">
+                <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
                 <input type="text" placeholder="Name" class="input" required autofocus><br>
+                <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
                 <input type="email" name="email1" id="email1" placeholder="Email-Address" class="input" required><br>
+                <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-phone fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
                 <input type="text" placeholder="Phone Number" class="input" name="number1" id="number1" required><br>
             
                 <p> Location </p>
 
                 <input type="text" placeholder="Street" name="street" id="street" class="input" required><br>
-                <input type="text" placeholder="state" name=""
+                <input type="text" placeholder="State" name="state" id="state" class="input" required><br>
+                <input type="text" name="town" id="town" placeholder="Town" class="input" required><br>
+                <input type="text" placeholder="Country" name="country" id="Nation" class="input" required><br>
+
+                <p> Create a password </p>
+
+                <div class="relative">
+                    <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                    <input type="password" name="pass1" id="pass1" class="input" placeholder="Password..." required><span onclick="myfun()" id="span"> <i class="fa fa-eye-slash"></i></span>
+                </div><br>
+                <div class="relative">
+                    <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                    <input type="password" name="pass1" id="pass1" class="input" placeholder="confirm password..." required><span onclick="myfun2()" id="span1"> <i class="fa-eye-slash"></i></span>
+                </div><br><br>
 
 
+                <div class="relative">
+                    <button type="submit"
+                      class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                  </div>
 
+                <div class="form-check d-flex justify-content-center mb-5">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                    <label class="form-check-label" for="form2Example3g">
+                      I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+                    </label>
+                  </div><br><br>
+                  <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="my-login-page.html"
+                    class="fw-bold text-body"><u>Login here</u></a></p>
 
-
+                    <p>Sign in with:</p>
+                    <div class="text-center mb-3">
+                        <span type="button" class="btn btn-link btn-floating mx-1">
+                          <i class="fab fa-facebook-f"></i>
+                        </span>
+                
+                        <span type="button" class="btn btn-link btn-floating mx-1">
+                          <i class="fab fa-google"></i>
+                        </span>
+                
+                        <span type="button" class="btn btn-link btn-floating mx-1">
+                          <i class="fab fa-twitter"></i>
+                        </span>
+                
+                        <span type="button" class="btn btn-link btn-floating mx-1">
+                          <i class="fab fa-github"></i>
+                        </span>
+                      </div>
+                
+            
+            </form>
+        </div>
+    </div>
 </body>
 </html>
