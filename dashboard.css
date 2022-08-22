@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(black.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.section img {
+    width: 420px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 50px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+
+.welcome-text {
+    margin: 20% 10px 10px -20%;
+    color: #f9f9f9;
+    text-align: left;
+}
+
+.welcome-text h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.welcome-text h6 {
+    color: #fcfc;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+
+.nav-item {
+    text-align: center;
+}
+
+.botton {
+    background: #f9004d;
+    color: white;
+    text-decoration: solid;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 20px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.botton:hover {
+    background: transparent;
+    border: 2px 130deg, rgb(54, 23, 233), #d80870;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: #001000;
+    box-shadow: inset 0 0 5px #000;
+    border-radius: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(130deg, rgb(54, 23, 233), #d80870);
+    border-radius: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    opacity: 0.8;
+  }
+#main {
+    background: transparent;
+}
+
+.navbar .navbar-expand-lg .navbar-light .bg-light {
+    background: transparent;
+}
