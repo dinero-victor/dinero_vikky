@@ -18,6 +18,7 @@ section {
     grid-template-columns: repeat(2, 2fr);
     align-items: center;
     grid-gap: 6rem;
+    animation: anime1 2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
 .contact-img img {
@@ -111,3 +112,15 @@ form textarea {
   ::-webkit-scrollbar-thumb:hover {
     opacity: 0.8;
   }
+
+  @keyframes anime1 {
+    0% {
+        transform: translateY(250px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -55,6 +55,7 @@ body {
 #skills {
 	margin-top:  5.6%;
 	width:  120%;
+    animation: anime1 4s ease;
 }
 
 .skills-container {
@@ -139,4 +140,19 @@ span {
 
 .hidden {
     margin-left: 20%;
+}
+
+@keyframes anime1 {
+    0% {
+        transform: translateY(-300px);
+        opacity: 0.2;
+    }
+    50% {
+        transform: translateY(200px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

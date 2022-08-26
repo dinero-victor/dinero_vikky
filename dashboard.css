@@ -16,6 +16,7 @@ body {
     height: auto;
     max-width: 100%;
     border-radius: 50px;
+    animation: anime 4s ease;
 }
 
 .main {
@@ -32,12 +33,14 @@ body {
     margin: 20% 10px 10px -20%;
     color: #f9f9f9;
     text-align: left;
+    animation: anime1 4s ease;
 }
 
 .welcome-text h1 {
     font-size: 5rem;
     font-weight: 700;
     letter-spacing: 4px;
+    animation: anime1 4s ease;
 }
 
 .welcome-text h6 {
@@ -46,6 +49,7 @@ body {
     text-transform: capitalize;
     margin-bottom: 15px;
     letter-spacing: 1px;
+    animation: anime1 4s ease;
 }
 
 
@@ -97,4 +101,36 @@ body {
 
 .navbar .navbar-expand-lg .navbar-light .bg-light {
     background: transparent;
+}
+
+@keyframes anime {
+    0% {
+        transform: translateX(500px);
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes anime1 {
+    0% {
+        transform: translateX(-300px);
+        opacity: 0.2;
+    }
+    50% {
+        transform: translateX(200px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.dinero {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #f9004d;
 }
