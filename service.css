@@ -16,8 +16,7 @@ body {
     padding: 20px 15px;
     background: rgb(0, 0, 0);
     box-shadow: 0 2px 5px #000;
-    height: 10vh; 
-    border: 0px;
+    height: 10vh;
     overflow: hidden;
 }
 
@@ -54,90 +53,74 @@ ul li a:hover {
 .link {
     background-color: #000;
 }
-section {
-    padding: 40px 15%;
-}
 
-.contact {
-    height: 100%;
+.service {
     width: 100%;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    align-items: center;
-    grid-gap: 6rem;
+    padding: 30px 0px;
     animation: anime1 2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
-.contact-img img {
-    max-width: 100%;
-    height: 520px;
-    border-radius: 50px;
-    background: transparent;
-    box-shadow: 40%;
-}
-
-.contact-form h1 {
-    font-size: 80px;
+.title h2 {
     color: white;
-    margin-bottom: 20px; 
-    text-shadow: 3px 5px 4px #ff0263;
+    width: 1130px;
+    margin: 30px auto;
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 3px 5px 4px black;
 }
 
-.contact-form span {
-    color: #f9004d;
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    background: #000000;
+    animation: anime1 2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
-
-.contact-form p {
-    color: #fcfc;
-    letter-spacing: 1px;
-    line-height: 28px;
-    font-size: 18px;
-    margin-bottom: 45px;
-    font-family: sans-serif;
-}
-
-.contact-form form {
+.card {
+    height: 30%;
+    width: 30%;
+    padding: 10px 20px;
+    border-radius: 70px;
+    margin: 5px;
     position: relative;
+    overflow: hidden;
+    text-align: center;
 }
-
-.contact-form form input,
-form textarea {
-    width: 100%;
-    padding: 17px;
-    border: none;
-    outline: none;
-    background: #191919;
-    color: #fff;
-    font-size: 1.1rem;
-    margin-bottom: 0.7rem;
-    border-radius: 10px;
-    box-shadow: 40% #fff;
+.pra p{
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 15px;
 }
-
-.contact-form textarea {
-    resize: none;
-    height: 200px;
+.card i {
+    font-size: 30px;
+    color: #f9004d;
+    text-shadow: 2px 3px 2px rgb(0, 0, 0);
+    
 }
-
-.contact-form .btn {
-    display: inline-block;
+h5 {
+    color: #000;
+    font-size: 35px;
+    margin-bottom: 13px;
+    text-shadow: 1px 2px 1px #f9004d;
+}
+.card .botton {
     background: #f9004d;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: 600;
-    border: 2px solid transparent;
-    border-radius: 10px;
-    width: 220px;
-    transition: ease .20s;
-    cursor: pointer;
+    color: rgb(0, 0, 0);
+    text-decoration: solid;
+    border: 0px solid transparent;
+    font-weight: bold;
+    padding: 10px 17px;
+    border-radius: 50px;
+    transition: .4s;
 }
 
-.contact-form .btn:hover {
-    background: transparent, linear-gradient(130deg, rgb(54, 23, 233), #d80870);
-    border: 2px solid #f9004d;
-    transform: scale(1.1);
+.card .botton:hover {
+    background: transparent;
+    border: 2px 130deg, rgb(54, 23, 233), #d80870;
+    cursor: pointer;
 }
 
 ::-webkit-scrollbar {
@@ -160,9 +143,9 @@ form textarea {
 
   ::-webkit-scrollbar-thumb:hover {
     opacity: 0.8;
-  }
+}
 
-  @keyframes anime1 {
+@keyframes anime1 {
     0% {
         transform: translateY(250px);
         opacity: 0;
