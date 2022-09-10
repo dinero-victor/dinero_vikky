@@ -75,3 +75,13 @@ h1 {
 .text-center:nth-child(1) {
     margin: 0%;
 }
+
+@media screen and (max-width: 600px) {
+    .box {
+        display: block;
+        width: 100%;
+    }
+    .input {
+        width: 100%;
+    }
+}
