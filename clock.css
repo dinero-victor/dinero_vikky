@@ -1,0 +1,98 @@
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccbody {
+	margin:  0;
+	padding:  0;
+	font-family:  'Monospace';
+	background:  #000010;
+}
+
+#clock {
+	display:  flex;
+	justify-content:  center;
+	align-items:  center;
+	position:  relative;
+	-webkit-box-reflect:  below 1px linear-gradient(transparent, #000010);
+	margin:  0 5px;
+	body {
+		background: rgb(219, 16, 94);
+		position: relative;
+	}
+	
+	.container {
+		width: 400px;
+		height: 400px;
+		background: rgba(255,255,255,0.2);
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
+	}
+	
+	.circle {
+		width: 100px;
+		height: 100px;
+		background: orange;
+		border-radius: 50%;
+		z-index: -1;
+		position: absolute;
+		top: 80%;
+	}
+}
+
+#clock div span {
+	display:  block;
+	font-size:  3rem;
+	padding:  10px;
+	width:  100px;
+	height:  100px;
+	display:  flex;
+	justify-content:  space-around;
+	align-items:  center;
+	background:  #00BB00;
+	color:  white;
+	border:  1px solid lime;
+	z-index:  10;
+}
+
+ #clock div:nth-last-child span{
+	background:  blue;
+}
+
+
+
+/*body {
+	background:  black;
+	width:  100%;
+	height:  100vh;
+	font-family:  Quicksand, sans-serif;
+	display:  flex;
+	justify-content:  center;
+	align-items:  center;
+}\\\\\\\\\\\\\\\
+
+#clock {
+	background:  #000040;
+	border:  5px solid blue;
+	border-radius:  50%;
+	height:  200px;
+	width:  200px;
+}
+
+.time {
+	border:  2px solid lime;
+	height:  100px;
+	width:  100px;
+	background:  darkgreen;
+	display:  block;
+	text-align:  center;
+	display:  flex;
+	justify-content:  center;
+	align-items:  center;
+}
+
+.d span {
+	font-size:  1rem;
+	font-weight:  bold;
+	color:  black;
+}*/
+	
+
+
+

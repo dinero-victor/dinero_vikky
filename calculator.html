@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script>
+        function sq() {
+        document.calculator.ans.value = Math.sqrt(document.calculator.ans.value);
+        }
+        function log() {
+        document.calculator.ans.value = Math.log(document.calculator.ans.value);
+        }
+        function sin() {
+        document.calculator.ans.value = Math.sin(document.calculator.ans.value);
+        }
+        function tan() {
+        document.calculator.ans.value = Math.tan(document.calculator.ans.value);
+        }
+        function cos() {
+        document.calculator.ans.value = Math.cos(document.calculator.ans.value);
+        }
+        function In() {
+        document.calculator.ans.value = Math.ln(document.calculator.ans.value);
+        }
+        function Int() {
+        document.calculator.ans.value = Math.lnt(document.calculator.ans.value);
+        }
+        </script>
+</head>
+<body>
+    <div class="container">
+        <form action="/" name="calc">
+            <div id="date"></div>
+            <input type="text" name="display" id="display" placeholder="0">
+            <table>
+                <tr>
+                    <td><input type="reset" class="btn cbtn" value="AC"></td>
+                    <td><input type="button" class="btn cbtn" value="DC" onclick="document.calc.display.value=''"></td>
+                    <td><input type="button" class="btn cbtn" value="%" onclick="document.calc.display.value+='%'"></td>
+                    <td><input type="button" class="btn cbtn" value="/" onclick="document.calc.display.value+='/'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btn" value="7" onclick="document.calc.display.value+='7'"></td>
+                    <td><input type="button" class="btn" value="8" onclick="document.calc.display.value+='8'"></td>
+                    <td><input type="button" class="btn" value="9" onclick="document.calc.display.value+='9'"></td>
+                    <td><input type="button" class="btn cbtn" value="X" onclick="document.calc.display.value+='*'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btn" value="4" onclick="document.calc.display.value+='4'"></td>
+                    <td><input type="button" class="btn" value="5" onclick="document.calc.display.value+='5'"></td>
+                    <td><input type="button" class="btn" value="6" onclick="document.calc.display.value+='6'"></td>
+                    <td><input type="button" class="btn cbtn" value="-" onclick="document.calc.display.value+='-'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btn" value="1" onclick="document.calc.display.value+='1'"></td>
+                    <td><input type="button" class="btn" value="2" onclick="document.calc.display.value+='2'"></td>
+                    <td><input type="button" class="btn" value="3" onclick="document.calc.display.value+='3'"></td>
+                    <td><input type="button" class="btn cbtn" value="+" onclick="document.calc.display.value+='+'"></td>
+                </tr>
+                <td><input type="button" class="btn" value="0" onclick="document.calc.display.value+='0'"></td>
+                <td><input type="button" class="btn" value="00" onclick="document.calc.display.value+='00'"></td>
+                <td><input type="button" class="btn" value="." onclick="document.calc.display.value+='.'"></td>
+                <td><input type="button" class="btn cbtn" value="=" onclick="document.calc.display.value=eval(document.calc.display.value)"></td>
+            </table>
+            
+        </form>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
